@@ -21,6 +21,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- 画面遷移用 -->
+        <activity android:name=".judge.JudgeActivity"></activity>
     </application>
 
 </manifest>
