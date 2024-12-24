@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <!-- 2024/12/18 追加 OkHttp用権限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -21,8 +24,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- 画面遷移用 -->
+
+        <!-- 2024/12/18 追加 画面遷移用 -->
         <activity android:name=".judge.JudgeActivity"></activity>
+        <activity android:name=".flask.FlaskActivity"></activity>
     </application>
 
 </manifest>

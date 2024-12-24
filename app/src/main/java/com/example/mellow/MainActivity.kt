@@ -21,14 +21,15 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        // 追加: 2024/12/18 判定画面遷移テスト用ボタン
+        /**
+         * 追加 2024/12/18 判定画面遷移テスト用ボタン
+         */
         val btn: Button = findViewById<Button>(R.id.btn_jump_page)
         btn.setOnClickListener {
             Toast.makeText(this, "タップ", Toast.LENGTH_LONG).show()
             val intent = Intent(this, JudgeActivity::class.java)
             startActivity(intent)
         }
-
 
     }
 }
